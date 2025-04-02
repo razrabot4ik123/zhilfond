@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Roboto Flex';
+	src: local('Roboto Flex Regular'), local('RobotoFlex-Regular'),
+		url('../fonts/RobotoFlex-Regular.woff2') format('woff2'),
+		url('../fonts/RobotoFlex-Regular.woff') format('woff');
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Flex';
+	src: local('Roboto Flex Regular'), local('RobotoFlex-Regular'),
+		url('../fonts/RobotoFlex-Regular.woff2') format('woff2'),
+		url('../fonts/RobotoFlex-Regular.woff') format('woff');
+	font-style: normal;
+	font-display: swap;
+}
+
+/* @font-face {
+	font-family: 'Roboto Flex';
+	src: local('Roboto Flex'), local('RobotoFlex'),
+		url('../fonts/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf')
+			format('woff2');
+	font-style: normal;
+	font-display: swap;
+} */
