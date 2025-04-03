@@ -147,3 +147,37 @@ const usePhone = () => {
 	});
 };
 usePhone();
+
+const useOurWorksSliders = () => {
+	document.querySelectorAll('.our-works__slider').forEach((sliderElem) => {
+		new Swiper(sliderElem, {
+			slidesPerView: 1,
+			pagination: {
+				el: '.our-works__slider-pagination',
+				type: 'fraction',
+			},
+			spaceBetween: 30,
+			centeredSlides: true,
+			initialSlide: 1,
+			breakpoints: {
+				501: {
+					slidesPerView: 1.2,
+				},
+				577: {
+					slidesPerView: 1.5,
+				},
+				769: {
+					slidesPerView: 2,
+				},
+				993: {
+					slidesPerView: 2.5,
+				},
+				1201: {
+					slidesPerView: 3,
+					centeredSlides: false,
+				},
+			},
+		});
+	});
+};
+useOurWorksSliders();
