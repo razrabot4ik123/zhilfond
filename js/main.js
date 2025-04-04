@@ -60,7 +60,8 @@ const useNavAccordion = () => {
 			accordionItem.classList.toggle('nav__item--opened');
 
 			if (accordionItem.classList.contains('nav__item--opened')) {
-				accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+				accordionContent.style.maxHeight =
+					60 + accordionContent.scrollHeight + 'px';
 			} else {
 				accordionContent.style.maxHeight = null;
 			}

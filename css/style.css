@@ -433,10 +433,10 @@ img {
 	position: absolute;
 	width: 100%;
 	left: 0;
-	padding: 20px 40px;
 	background-color: var(--grey-color);
 	z-index: var(--z-index-5);
 	max-height: 0;
+	padding: 20px 40px;
 	opacity: 0;
 	visibility: hidden;
 	transition: all var(--transition);
@@ -1519,6 +1519,7 @@ img {
 	padding: 30px 40px;
 	border: 1px solid var(--accent-color);
 	margin-bottom: 20px;
+	border-radius: 4px;
 }
 
 .materials__info-title {
