@@ -181,3 +181,106 @@ const useOurWorksSliders = () => {
 	});
 };
 useOurWorksSliders();
+
+const useServicesSlider = () => {
+	let servicesSlider = null;
+
+	function checkWidth() {
+		if (window.innerWidth <= 768) {
+			if (!servicesSlider) {
+				initSwiper();
+			}
+		} else {
+			if (servicesSlider) {
+				destroySwiper();
+			}
+		}
+	}
+
+	function initSwiper() {
+		servicesSlider = new Swiper('.services__controls-slider', {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			scrollbar: {
+				el: '.services__controls-scrollbar',
+				draggable: true,
+			},
+			breakpoints: {
+				381: {
+					slidesPerView: 1.1,
+				},
+				577: {
+					spaceBetween: 30,
+					slidesPerView: 1.2,
+				},
+			},
+		});
+	}
+
+	function destroySwiper() {
+		if (servicesSlider) {
+			servicesSlider.destroy(true, true);
+			servicesSlider = null;
+		}
+	}
+
+	window.addEventListener('resize', checkWidth);
+	checkWidth();
+};
+useServicesSlider();
+
+const useTabServices = () => {
+	const tabControls = document.querySelector('.services__controls');
+
+	if (!tabControls) return;
+
+	const toggleTab = (event) => {
+		const tabControl = event.target.closest('.services__controls-link');
+
+		if (!tabControl) return;
+		event.preventDefault();
+
+		if (tabControl.classList.contains('services__controls-link--active'))
+			return;
+
+		const tabContentID = tabControl.getAttribute('href');
+		const tabContent = document.querySelector(tabContentID);
+		const activeControl = document.querySelector(
+			'.services__controls-link--active',
+		);
+		const activeContent = document.querySelector(
+			'.services__content-item--active',
+		);
+
+		if (activeControl) {
+			activeControl.classList.remove('services__controls-link--active');
+		}
+		if (activeContent) {
+			activeContent.classList.remove('services__content-item--active');
+		}
+
+		tabControl.classList.add('services__controls-link--active');
+		tabContent.classList.add('services__content-item--active');
+	};
+
+	tabControls.addEventListener('click', toggleTab);
+};
+useTabServices();
+
+const useBtnUp = () => {
+	const btnUp = document.querySelector('.btn-up');
+	window.addEventListener('scroll', () => {
+		if (window.scrollY > 300) {
+			btnUp.classList.add('btn-up--show');
+		} else {
+			btnUp.classList.remove('btn-up--show');
+		}
+	});
+
+	btnUp.addEventListener('click', () => {
+		window.scrollTo({
+			top: 0,
+		});
+	});
+};
+useBtnUp();
