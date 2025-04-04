@@ -124,6 +124,9 @@
 			</a>
 			<ul class="nav__list">
 				<li class="nav__item">
+					<a class="nav__link" href="/">Главная</a>
+				</li>
+				<li class="nav__item">
 					<a class="nav__link" href="/our-works.html">Проекты</a>
 				</li>
 				<li class="nav__item">
@@ -144,20 +147,22 @@
 					</a>
 					<ul class="nav__sublist">
 						<li class="nav__subitem">
-							<a class="nav__sublink" href="#">Геология и геодезия</a>
+							<a class="nav__sublink" href="/geology-and-geodesy.html"
+								>Геология и геодезия</a
+							>
 						</li>
 						<li class="nav__subitem">
-							<a class="nav__sublink" href="#"
+							<a class="nav__sublink" href="/fitout.html"
 								>Внутренняя отделка и подключение коммуникаций</a
 							>
 						</li>
 						<li class="nav__subitem">
-							<a class="nav__sublink" href="#"
-								>Ипотеку соединить и трейд&nbsp;ин</a
+							<a class="nav__sublink" href="/tradein-mortgage.html"
+								>Ипотека и трейд&nbsp;ин</a
 							>
 						</li>
 						<li class="nav__subitem">
-							<a class="nav__sublink" href="#">Все услуги</a>
+							<a class="nav__sublink" href="/services.html">Все услуги</a>
 						</li>
 					</ul>
 				</li>
@@ -253,9 +258,224 @@
 		</nav>
 		<div class="overlay" data-burger="overlay"></div>
 		<main class="main">
-			<section class="geology-and-geodesy">
+			<section class="fitout">
 				<div class="container">
-					<h1 class="geology-and-geodesy__title">Геология и геодезия</h1>
+					<div class="fitout__info">
+						<h1 class="fitout__title">
+							Мы предоставляем <span>Внутренняя отделка</span> и
+							<span>подключение коммуникаций</span>
+						</h1>
+						<p class="fitout__description">
+							Далеко-далеко, за словесными горами в стране гласных и согласных
+							живут рыбные тексты. Вскоре возвращайся мир алфавит использовало
+							журчит одна, парадигматическая бросил она
+						</p>
+						<a class="fitout__button button" href="#">Узнать больше</a>
+					</div>
+					<div class="fitout__bottom">
+						<img class="fitout__img" src="./img/decor/projects-decor-2.jpg" alt="дом" />
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="container">
+					<div class="services__controls-slider swiper">
+						<ul class="services__controls swiper-wrapper">
+							<li class="services__controls-item swiper-slide">
+								<a
+									class="services__controls-link services__controls-link--active"
+									href="#tab1"
+								>
+									Внутренняя отделка
+								</a>
+							</li>
+							<li class="services__controls-item swiper-slide">
+								<a class="services__controls-link" href="#tab2">
+									Подключение коммуникаций
+								</a>
+							</li>
+						</ul>
+						<div class="services__controls-scrollbar swiper-scrollbar"></div>
+					</div>
+					<ul class="services__content">
+						<li
+							id="tab1"
+							class="services__content-item services__content-item--active"
+						>
+							<ul class="services__cards">
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+								</li>
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+								</li>
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+								</li>
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<a class="services__card-link hover" href="#">Подробнее</a>
+								</li>
+							</ul>
+							<ul class="services__images">
+								<li class="services__images-wrapper">
+									<img
+										class="services__images-img"
+										src="./img/decor/services-decor-1.jpg"
+										alt="дом"
+									/>
+								</li>
+								<li class="services__images-wrapper">
+									<img
+										class="services__images-img"
+										src="./img/decor/services-decor-1.jpg"
+										alt="дом"
+									/>
+								</li>
+								<li class="services__images-wrapper">
+									<img
+										class="services__images-img"
+										src="./img/decor/services-decor-1.jpg"
+										alt="дом"
+									/>
+								</li>
+								<li class="services__images-wrapper">
+									<img
+										class="services__images-img"
+										src="./img/decor/services-decor-1.jpg"
+										alt="дом"
+									/>
+								</li>
+							</ul>
+						</li>
+						<li id="tab2" class="services__content-item">
+							<ul class="services__cards">
+								<li class="services__card">
+									<h3 class="services__card-title">Другой текст для примера</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+								</li>
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+								</li>
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+								</li>
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+									<a class="services__card-link hover" href="#">Подробнее</a>
+								</li>
+							</ul>
+							<ul class="services__images">
+								<li class="services__images-wrapper">
+									<img
+										class="services__images-img"
+										src="./img/decor/services-decor-1.jpg"
+										alt="дом"
+									/>
+								</li>
+								<li class="services__images-wrapper">
+									<img
+										class="services__images-img"
+										src="./img/decor/services-decor-1.jpg"
+										alt="дом"
+									/>
+								</li>
+								<li class="services__images-wrapper">
+									<img
+										class="services__images-img"
+										src="./img/decor/services-decor-1.jpg"
+										alt="дом"
+									/>
+								</li>
+								<li class="services__images-wrapper">
+									<img
+										class="services__images-img"
+										src="./img/decor/services-decor-1.jpg"
+										alt="дом"
+									/>
+								</li>
+							</ul>
+							<ul class="services__cards">
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+								</li>
+								<li class="services__card">
+									<h3 class="services__card-title">Заголовок карточки такой</h3>
+									<p class="services__card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Tempora quisquam facere voluptatibus corrupti at ipsum?
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<section class="more-service more-service--reverse">
