@@ -3083,6 +3083,10 @@ img {
 		margin-left: 0;
 	}
 
+	.materials__button {
+		font-size: 20px;
+		}
+
 	/* stages */
 	.stages {
 		padding: 60px 0;
